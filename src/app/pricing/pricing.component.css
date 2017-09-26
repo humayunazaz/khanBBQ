@@ -1,0 +1,96 @@
+.item{
+    position: relative;
+}
+
+.item-content{
+    position: absolute;
+    opacity: 1;
+    display: table;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+#portfolio .item{
+    display: block;
+    opacity: 1;
+    height: 230px;
+    margin-bottom: 25px!important;
+}
+#portfolio .item .item-text{
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+}
+#portfolio .item .item-text h2{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+#portfolio .item .item-text .hover-effect{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 50%;
+    padding: 37px 14px;
+}
+.item:hover .item-content{
+    opacity: 1;
+}
+.item .itemName{
+    padding: 10px 5px;
+    background: #1e1e1e;
+}
+.item .itemName p{
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.item img{
+    height: 190px;
+}
+
+@media (min-width:320px) and (max-width:567px) {
+    #filter-list li{
+        margin-bottom: 10px;
+    }
+    #filter-list{
+        padding-left: 0;
+    }
+    #portfolio .item{
+        height: auto;
+    }
+    #portfolio .item img{
+        height: auto;
+    }
+    .item-content{
+        top: 30%;
+    }
+}
+@media (min-width:568px) and (max-width:767px) {
+    #portfolio .item{
+        float: left;
+        width: 50%;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    #portfolio .item{
+        height: 200px;
+    }
+    #portfolio .item img{
+        height: 140px;
+    }
+    #portfolio .item .item-text .hover-effect{
+        width: 50px;
+        height: 50px;
+        padding: 20px 8px;
+    }
+    #portfolio .item .hover-effect h2{
+        font-size: 16px;
+    }
+}

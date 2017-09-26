@@ -1,0 +1,18 @@
+<admin-nav></admin-nav>
+<section class="categoryForm">
+  <div class="container">
+    <div class="col-sm-6">
+      <h3 *ngIf="id">Edit the category</h3>
+      <h3 *ngIf="!id">Add a category</h3>
+      <form #f="ngForm" (ngSubmit)="save(f.value)">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input #title="ngModel" [(ngModel)]="category.title" name="title" id="title" type="text" class="form-control" required>
+          <div class="alert alert-danger" *ngIf="title.touched && title.invalid">Title is required.</div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Save</button>
+        <button type="button" class="btn btn-danger" *ngIf="id" (click)="delete()">Delete</button>
+      </form>
+    </div>
+  </div>
+</section>

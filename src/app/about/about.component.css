@@ -1,0 +1,14 @@
+.img-section .single-img{
+    padding: 0 4px;
+    margin-bottom: 7px;
+}
+.img-section .single-img img{
+    width: 100%;
+}
+
+@media (min-width:568px) and (max-width:767px) {
+    .single-img{
+        width: 50%;
+        float: left;
+    }
+}

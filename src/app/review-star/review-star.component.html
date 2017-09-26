@@ -1,0 +1,15 @@
+<div class="stars" *ngIf="edit">
+  <i class="fa fa-star" *ngFor="let star of stars" (click)="rating(star)" (mouseover)="hoverEffect(star)" (mouseleave)="endHover()"
+    [ngClass]="{
+      red: addColor && star <= colorNumber,
+      highlight: star <= rate
+    }"
+  ></i>
+</div>
+<div class="stars" *ngIf="!edit">
+  <i class="fa fa-star" *ngFor="let star of stars"
+    [ngClass]="{
+      highlight: star <= rate
+    }"
+  ></i>
+</div>

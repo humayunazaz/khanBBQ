@@ -1,0 +1,53 @@
+.singleReview img{
+    width: 50%;
+    display: inline-block;
+    border: 2px solid #5d5c5c;
+    border-radius: 50%;
+}
+.reviewImg{
+    text-align: center;
+}
+.singleReview, .singleReview p{
+    color: #fff;
+}
+.fa.fa-star{
+    color: #e40d0d;
+}
+h1{
+    margin-top: 35px;
+}
+.reviews{
+    margin-top: 50px;
+}
+.singleReview{
+    padding: 0 25px;
+}
+.singleReview .review{
+    margin-bottom: 40px;
+}
+.singleReview .review p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.review-bg{
+    background: url(/assets/images/review.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media (min-width:320px) and (max-width:567px) {
+    .review-bg{
+        height: auto;
+    }
+}
+@media (min-width:568px) and (max-width:767px) {
+    .review-bg{
+        height: auto;
+    }
+    .singleReview{
+        float: left;
+        width: 50%;
+    }
+}

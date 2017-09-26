@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Rubik:700');
+
+body, a, p, li{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Rubik', sans-serif;
+}
+.overlay-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.4);
+}
+section{
+    position: relative;
+}
+
+.giveReview form{
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+}
+.giveReview .rating{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.giveReview .rating h4{
+    width: 40%;
+    float: left;
+    font-weight: 700;
+}
+.giveReview .rating review-star{
+    width: 60%;
+    float: left;
+    text-align: right;
+    margin-top: 10px;
+}
+.giveReview .rating review-star .fa-star{
+    padding: 2px;
+    font-size: 18px;
+    color: #737373;
+}

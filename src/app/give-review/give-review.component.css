@@ -1,0 +1,31 @@
+section{
+    padding: 50px 100px;
+}
+form{
+    margin-top: 30px;
+}
+
+@media (min-width:320px) and (max-width:567px) {
+    .giveReview form{
+        width: 100%;
+    }    
+    .giveReview{
+        padding: 15px 0;
+    }
+}
+@media (min-width:568px) and (max-width:767px) {
+    .giveReview form{
+        width: 100%;
+    }
+    .giveReview{
+        padding: 25px 0;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .giveReview .container{
+        width: 100%;
+    }
+    .giveReview form{
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+.image_box_story2 .item img{
+    height: 360px;
+}
+
+@media (min-width:320px) and (max-width:567px) {
+    .image_box_story2{
+        padding-left: 0;
+        margin-bottom: 35px;
+    }
+}
+@media (min-width:568px) and (max-width:767px) {
+    .image_box_story2{
+        padding-left: 0;
+        margin-bottom: 35px;
+    }
+    .item img{
+        width: 100%;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .item img{
+        width: 100%;
+    }
+    .image_box_story2{
+        padding-left: 0;
+        margin-bottom: 35px;
+    }
+}

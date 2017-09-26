@@ -1,0 +1,17 @@
+iframe{
+    width: 100%;
+}
+@media (min-width:320px) and (max-width:567px) {
+    .social_connect{
+        background-color: black;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width:568px) and (max-width:767px) {
+    .social_connect{
+        background-color: black;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

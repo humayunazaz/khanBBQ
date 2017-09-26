@@ -1,0 +1,16 @@
+<section id="about" class="description_content">
+    <div class="text-content container" *ngIf="about != undefined">
+        <div class="col-md-6">
+          <h1>About us</h1>
+          <div class="fa fa-cutlery fa-2x"></div>
+          <p class="desc-text">{{about.content}}</p>
+        </div>
+        <div class="col-md-6">
+            <div class="img-section">
+                <div *ngFor="let img of about.images; let i = index;" class="col-sm-6 single-img">
+                    <img src="{{img}}" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

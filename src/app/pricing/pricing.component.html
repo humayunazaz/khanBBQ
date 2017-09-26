@@ -1,0 +1,33 @@
+<section id ="pricing" class="description_content">
+  <div class="pricing background_content">
+     <h1><span>Affordable</span> pricing</h1>
+  </div>
+ <div class="text-content container"> 
+     <div class="container">
+         <div class="row">
+             <div id="w">
+                 <ul id="filter-list" class="clearfix">
+                     <li class="filter" *ngFor="let cate of categories" (click)="updateProducts(cate.$key)"
+                        [class.active]="cate.$key === activeCategory"
+                     >{{cate.title}}</li>
+                 </ul><!-- @end #filter-list -->    
+                <div id="portfolio">
+                     <div @price class="item col-sm-3" *ngFor="let product of filteredProducts">
+                        <img [src]="product.imageUrl" alt="Food" >
+                        <div class="item-content">
+                            <div class="item-text">
+                                <div class="hover-effect">
+                                    <h2 class="white">{{product.price}}</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemName">
+                            <p>{{product.title}}</p>
+                        </div>
+                     </div>
+                </div>
+             </div><!-- @end #w -->
+         </div>
+     </div>
+ </div>  
+</section>

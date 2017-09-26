@@ -1,0 +1,9 @@
+.dropdown-toggle{
+    cursor: pointer;
+}
+.navbar-brand{
+    padding: 0;
+}
+.navbar-brand img{
+    width: 40px;
+}

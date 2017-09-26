@@ -1,0 +1,17 @@
+<section class="review" id="reviews">
+  <div  class="review-bg background_content">
+    <div class="overlay-bg"></div>
+    <div class="container">
+      <h1>Customers Experience</h1>
+      <div class="reviews">
+        <div class="singleReview col-sm-3" *ngFor="let review of reviews; let i = index;">
+          <div class="review" *ngIf="i <= 7">
+            <h4>{{review.name}}</h4>
+            <p>{{review.review}}</p>
+            <review-star [edit]="false" [rate]="review.rating"></review-star>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
